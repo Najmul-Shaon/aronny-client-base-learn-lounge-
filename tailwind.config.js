@@ -7,6 +7,12 @@ export default {
         lato: ["Lato", "serif"],
         pacifico: ["Pacifico", "serif"],
       },
+      colors: {
+        primary_color: "#3AA34D",
+        primary_color_hover: "#319139",
+        primary_color_active: "#267C32",
+        light_color: "#E1F5D7",
+      },
     },
   },
   plugins: [require("daisyui")],
