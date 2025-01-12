@@ -3,6 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
 import axios from "axios";
 import { Helmet } from "react-helmet-async";
+import logo_with_heading from "../assets/images/logo_with_heading_noBg.jpg";
 
 const NavBar = () => {
   // load from auth provider
@@ -51,7 +52,7 @@ const NavBar = () => {
     </>
   );
   return (
-    <div className="navbar bg-white rounded-lg px-6 fixed top-0 container z-10">
+    <div className="navbar bg-white px-6 fixed top-0 container z-10 bg-opacity-50">
       <Helmet>
         <title>অরণ্য || হোম</title>
       </Helmet>
@@ -80,11 +81,8 @@ const NavBar = () => {
             {links}
           </ul>
         </div>
-        <Link
-          to="/"
-          className="text-3xl text-primary_color font-extrabold font-pacifico"
-        >
-          অরণ্য
+        <Link to="/">
+          <img className="w-[70px]" src={logo_with_heading} alt="" />
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">

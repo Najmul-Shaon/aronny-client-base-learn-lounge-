@@ -9,7 +9,7 @@ const CallToAction = () => {
         <input
           type="email"
           placeholder="Enter your email"
-          class="input input-bordered w-1/2 max-w-xs text-gray-900"
+          className="input input-bordered w-1/2 max-w-xs text-gray-900"
         ></input>
         <button className="btn btn-warning text-white ml-2">Subscribe</button>
       </div>

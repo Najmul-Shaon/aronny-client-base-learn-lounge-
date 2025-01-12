@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         lato: ["Lato", "serif"],
         pacifico: ["Pacifico", "serif"],
+        merienda: ["Merienda", "serif"],
       },
       colors: {
         primary_color: "#3AA34D",

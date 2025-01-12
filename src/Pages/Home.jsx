@@ -4,15 +4,17 @@ import Features from "../Components/Features";
 import Banner from "../Components/Banner";
 import StudyCard from "../Components/StudyCard";
 import CallToAction from "../Components/CallToAction";
+import Products from "../Components/Products";
 
 const Home = () => {
   return (
     <div className="container mx-auto">
       <Banner></Banner>
-      <Features></Features>
-      <StudyCard></StudyCard>
-      <FAQ></FAQ>
+      <Products></Products>
       <CallToAction></CallToAction>
+      {/* <Features></Features> */}
+      {/* <StudyCard></StudyCard> */}
+      {/* <FAQ></FAQ> */}
     </div>
   );
 };
