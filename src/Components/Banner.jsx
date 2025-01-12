@@ -1,7 +1,7 @@
 import { easeOut, motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import coverBg from "../assets/images/cover_2.jpg";
-import { FaPhone } from "react-icons/fa";
+import { FaFacebook, FaPhone, FaWhatsapp } from "react-icons/fa";
 
 const Banner = () => {
   return (
@@ -58,9 +58,26 @@ const Banner = () => {
             </h1>
             <p className="text-white text-2xl">
               <span className="border px-4 py-2 rounded-2xl">
-                <FaPhone className="inline mx-2 text-orange-400 rotate-90"></FaPhone>01721933810
+                <FaPhone className="inline mx-2 text-white rotate-90"></FaPhone>
+                01721-933810
               </span>
             </p>
+            <div className="flex justify-center mt-8 text-5xl gap-4">
+              <a
+                className="text-white"
+                target="_blank"
+                href="https://www.facebook.com/yousufali.sagor.75"
+              >
+                <FaFacebook></FaFacebook>
+              </a>
+              <a
+                className="text-green-300"
+                target="_blank"
+                href="https://wa.me/qr/GULDRTKNR4YDN1"
+              >
+                <FaWhatsapp></FaWhatsapp>
+              </a>
+            </div>
           </div>
         </div>
       </div>
