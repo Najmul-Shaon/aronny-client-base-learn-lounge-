@@ -3,6 +3,7 @@ import { FaArrowDown } from "react-icons/fa";
 import dayaShifa_3 from "../assets/images/daya-shifa-3.jpg";
 import { FaBangladeshiTakaSign } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import InstructionTabs from "../Components/InstructionTabs";
 
 const AronnyDayaShifaDetails = () => {
   return (
@@ -11,8 +12,8 @@ const AronnyDayaShifaDetails = () => {
         <title>অরণ্য || ডায়া শিফা</title>
       </Helmet>
       <div className="hero min-h-screen mt-[120px] md:mt-[60px]container mx-auto">
-        <div className="hero-content flex-col lg:flex-row border-2 gap-8 border-red-400">
-          <figure className="md:w-3/12">
+        <div className="hero-content flex-col lg:flex-row border-2 gap-8 border-light_color">
+          <figure className="md:w-5/12">
             <img src={dayaShifa_3} className="w-full rounded-lg shadow-2xl" />
           </figure>
           <div className="md:w-7/12 space-y-4">
@@ -74,6 +75,7 @@ const AronnyDayaShifaDetails = () => {
           </div>
         </div>
       </div>
+      <InstructionTabs></InstructionTabs>
     </>
   );
 };
