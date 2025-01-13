@@ -6,6 +6,7 @@ import PrivateRoute from "./PrivateRoute";
 import Home from "../Pages/Home";
 import AronnyDayaShifaDetails from "../Pages/AronnyDayaShifaDetails";
 import Checkout from "../Pages/Checkout";
+import ThankYou from "../Pages/ThankYou";
 
 const Router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const Router = createBrowserRouter([
       {
         path: "checkout",
         element: <Checkout></Checkout>,
+      },
+      {
+        path: "thankYou",
+        element: <ThankYou></ThankYou>,
       },
     ],
   },

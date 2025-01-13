@@ -3,11 +3,13 @@ import { Controller, useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 import { FaMinus, FaPlus } from "react-icons/fa";
 import { FaBangladeshiTakaSign } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const Checkout = () => {
   const [quantityCounter, setQuantityCounter] = useState(1);
   const [productPrice, setProductPrice] = useState(1000);
+  const navigate = useNavigate();
   const {
     register,
     reset,
@@ -24,6 +26,7 @@ const Checkout = () => {
       timer: 1500,
     });
     reset();
+    navigate("/thankYou");
     console.log(data);
   };
 
@@ -142,12 +145,15 @@ const Checkout = () => {
                   <h5>পন্যের সংখ্যাঃ </h5>
                   <p
                     onClick={() => quantityController("-")}
-                    className="p-3 border-2"
+                    className="p-2 border-2 cursor-pointer"
                   >
                     <FaMinus></FaMinus>
                   </p>
                   <p className="text-lg font-semibold">{quantityCounter}</p>
-                  <p onClick={() => quantityController("+")} className="">
+                  <p
+                    onClick={() => quantityController("+")}
+                    className="p-2 border-2 cursor-pointer"
+                  >
                     <FaPlus></FaPlus>
                   </p>
                 </div>
