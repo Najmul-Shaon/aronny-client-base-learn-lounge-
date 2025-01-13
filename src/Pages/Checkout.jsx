@@ -91,16 +91,31 @@ const Checkout = () => {
                   placeholder="এখানে আপনার ফোন নাম্বার লিখুন-"
                   className="input input-bordered w-full"
                   {...register("phoneNumber", {
-                    required: true,
-                    minLength: 11,
-                    maxLength: 11,
+                    required: "নাম্বার প্রদান করা বাধ্যতামূলক।",
+                    minLength: {
+                      value: 11,
+                      message: "নাম্বার অবশ্যই ১১ সংখ্যার হতে হবে।",
+                    },
+                    maxLength: {
+                      value: 11,
+                      message: "নাম্বার অবশ্যই ১১ সংখ্যার হতে হবে।",
+                    },
+                    pattern: {
+                      value: /^01\d{9}$/,
+                      message: "নাম্বার অবশ্যই ০১ দিয়ে শুরু হতে হবে।",
+                    },
                   })}
                 />
-                {errors.phoneNumber?.type === "required" && (
+                {errors.phoneNumber && (
+                  <p className="text-red-600 text-sm ms-3 mt-2">
+                    {errors.phoneNumber.message}
+                  </p>
+                )}
+                {/* {errors.phoneNumber?.type === "required" && (
                   <p className="text-red-600 text-sm ms-3 mt-2">
                     নাম্বার প্রদান করা বাধ্যতামূলক।
                   </p>
-                )}
+                )} */}
               </label>
               <label className="form-control w-full ">
                 <div className="label">

@@ -3,7 +3,7 @@ import "react-tabs/style/react-tabs.css";
 
 const InstructionTabs = () => {
   return (
-    <div className="my-24 container mx-auto">
+    <div className="my-24 container mx-auto p-2 md:p-0">
       <Tabs defaultIndex={1} onSelect={(index) => console.log(index)}>
         <TabList>
           <Tab>Title 1</Tab>

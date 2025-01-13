@@ -74,13 +74,17 @@ const NavBar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow space-y-2"
           >
             {links}
           </ul>
         </div>
         <Link to="/">
-          <img className="w-[70px]" src={logo_with_heading} alt="" />
+          <img
+            className="w-[40px] md:w-[60px]"
+            src={logo_with_heading}
+            alt=""
+          />
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -88,11 +92,11 @@ const NavBar = () => {
       </div>
       <div className="navbar-end flex gap-2">
         {user && user?.email ? (
-          <button onClick={logOut} className="btn btn-outline text-base">
+          <button onClick={logOut} className="btn btn-outline btn-sm text-base">
             লগ আউট
           </button>
         ) : (
-          <Link to="/login" className="btn btn-outline text-base">
+          <Link to="/login" className="btn btn-outline btn-sm text-base">
             লগইন
           </Link>
         )}

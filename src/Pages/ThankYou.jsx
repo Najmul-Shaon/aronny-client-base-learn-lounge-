@@ -6,14 +6,14 @@ import { FaHome } from "react-icons/fa";
 const ThankYou = () => {
   return (
     <div className="mt-[120px] container mx-auto">
-      <h2 className="text-center font-bold text-3xl">ধন্যবাদ!!</h2>
-      <p className="text-center font-bold text-xl">
+      <h2 className="text-center font-bold text-5xl">ধন্যবাদ!!</h2>
+      <p className="text-center font-bold text-3xl mt-2">
         আপনার অর্ডারটি গ্রহন করা হয়েছে।।
       </p>
       <h3 className="text-center mt-12 mb-4 text-xl underline">
         অর্ডারের বিবরণ
       </h3>
-      <div className="flex justify-center gap-12 border-2 rounded-xl w-1/2 mx-auto p-8">
+      <div className="flex justify-center gap-12 border-2 rounded-xl md:w-1/2 mx-auto p-8">
         <ul className="border rounded-xl text-end p-4 text-lg font-bold">
           <li>অর্ডার প্রদানের তারিখঃ</li>
           <li>পন্যের নামঃ</li>

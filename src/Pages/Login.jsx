@@ -3,9 +3,8 @@ import { FaEyeSlash } from "react-icons/fa";
 import { useContext, useRef, useState } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
-import { FaGoogle } from "react-icons/fa6";
 
 const Login = () => {
   const emailRef = useRef();
@@ -56,7 +55,6 @@ const Login = () => {
     <div>
       <div className="hero bg-base-200 min-h-screen mt-24 p-8">
         <div className="card bg-base-100 w-full max-w-lg shrink-0 shadow-2xl">
-          
           <form onSubmit={handleSubmit} className="card-body">
             <div className="form-control">
               <label className="label">
@@ -69,7 +67,6 @@ const Login = () => {
                 className="input input-bordered"
                 required
               />
-             
             </div>
             <div className="form-control relative">
               <label className="label">
@@ -94,28 +91,28 @@ const Login = () => {
                   <MdOutlineRemoveRedEye></MdOutlineRemoveRedEye>
                 )}
               </button>
-              <label className="label">
+              {/* <label className="label">
                 <Link className="label-text-alt link link-hover">
                   Forgot password?
                 </Link>
-              </label>
+              </label> */}
             </div>
             <div className="form-control mt-6">
               <button className="btn text-lg text-white bg-orange-400 hover:bg-orange-300">
                 Login
               </button>
             </div>
-            <p>
+            {/* <p>
               New here?
               <Link to="/signup" className="text-green-400 mx-2">
                 Sign Up
               </Link>
-            </p>
+            </p> */}
           </form>
-          <div className="flex justify-center">
+          {/* <div className="flex justify-center">
             <p className="text-2xl text-green-400">or</p>
-          </div>
-          <div className="flex flex-col items-center pb-4 space-y-4">
+          </div> */}
+          {/* <div className="flex flex-col items-center pb-4 space-y-4">
             <h2 className="text-2xl font-bold text-center mt-4 text-orange-400">
               Login with Google
             </h2>
@@ -125,7 +122,7 @@ const Login = () => {
             >
               <FaGoogle></FaGoogle>
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
